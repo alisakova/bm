@@ -1,5 +1,8 @@
 .links {
   @include flexbox(center, space-between);
+  @media (max-width: 700px) {
+    flex-direction: column;
+  }
 }
 
 .links__social {
@@ -13,6 +16,9 @@
   @include flexbox(center, flex-start);
   svg {
     margin-right: rem(13);
+  }
+  @media (max-width: 700px) {
+    margin-bottom: rem(42);
   }
 }
 

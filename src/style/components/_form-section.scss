@@ -1,5 +1,6 @@
 .form-section {
   background: url('../img/decor-2.svg') no-repeat center bottom/cover;
+  background-size: 150% 118%; 
   padding: rem(180 0 66);
   .container_small {
     max-width: rem(715);
@@ -7,7 +8,7 @@
   @media (max-width: 768px) {
     background-size: 186%;
   }
-  @media (max-width: 600px) {
+  @media (max-width: 700px) {
     background: linear-gradient(111.03deg, #312B6A 9.36%, #56508D 80.9%);
     padding: rem(50 0);
   }
@@ -16,4 +17,7 @@
 .form-section__title {
   color: #fff;
   margin-bottom: rem(50);
+  @media (max-width: 540px) {
+    text-align: center;
+  }
 }

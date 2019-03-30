@@ -1,0 +1,45 @@
+.modal {
+  width: 100%;
+  height: 72.5%;
+  background: #c4c4c4;
+  @media (max-width: 768px) {
+    max-width: rem(688);
+  }
+}
+
+.fancybox {
+  &-is-open {
+    .fancybox-bg {
+      background: $black;
+      opacity: 0.9;
+    }
+  }
+  &-button {
+    width: rem(28);
+    height: rem(28);
+    background: url('../img/close.svg') no-repeat center/contain;
+    opacity: 1;
+    svg {
+      display: none;
+    }
+  }
+  &-slide--html {
+    padding: {
+      left: rem(80);
+      right: rem(80);
+    }
+    @media (max-width: 768px) {
+      padding: {
+        left: rem(40);
+        right: rem(40);
+      }
+    }
+    .fancybox-close-small {
+      padding: 0;
+      top: rem(-48);
+    }
+  }
+  &-content {
+    overflow: visible;
+  }
+}
