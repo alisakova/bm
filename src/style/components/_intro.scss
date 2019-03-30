@@ -1,0 +1,16 @@
+.intro {
+  height: 100vh;
+  .container {
+    @include flexbox(center, flex-start);
+    height: 100%;
+  }
+}
+
+.intro__content {
+  padding: rem(92 0 247);
+}
+
+.intro__logo {
+  margin-bottom: rem(105);
+  max-width: rem(120);
+}

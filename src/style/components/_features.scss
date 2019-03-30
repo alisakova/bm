@@ -1,0 +1,17 @@
+.features {
+  padding: rem(2 0 132);
+}
+
+.featuers__list {
+  @include flexbox(flex-start, flex-start);
+}
+
+.features__icon {
+  max-width: rem(64);
+  margin-bottom: rem(21);
+}
+
+.features__descr {
+  font-size: rem(17);
+  text-align: center;
+}

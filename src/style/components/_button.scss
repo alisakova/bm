@@ -1,0 +1,11 @@
+.button {
+  border-radius: $border-radius;
+  background: $button-bg;
+  font: {
+    size: rem(18);
+    weight: 300;
+  }
+  color: #fff;
+  line-height: 1.33;
+  padding: rem(14 35 16);
+}
