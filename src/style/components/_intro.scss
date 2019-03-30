@@ -1,16 +1,69 @@
 .intro {
-  height: 100vh;
-  .container {
-    @include flexbox(center, flex-start);
-    height: 100%;
+  position: relative;
+}
+
+.intro__title {
+  @media (max-width: 768px) {
+    max-width: rem(342);
   }
 }
 
 .intro__content {
   padding: rem(92 0 247);
+  @media (max-width: 768px) {
+    padding: rem(42 0 17);
+  }
+  @media (max-width: 540px) {
+    padding: rem(42 0 52);
+  }
 }
 
 .intro__logo {
-  margin-bottom: rem(105);
+  margin-bottom: rem(100);
   max-width: rem(120);
+  @media (max-width: 768px) {
+    margin-bottom: rem(36);
+  }
+  @media (max-width: 540px) {
+    margin-left: rem(-20);
+    margin-bottom: rem(50);
+  }
+}
+
+.intro__img {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 71.4%;
+  @media (max-width: 540px) {
+    display: none;
+  }
+}
+
+.intro__play-btn {
+  background: $black;
+  border-radius: 50%;
+  width: rem(140);
+  height: rem(140);
+  @include flexbox(center, center);
+  position: absolute;
+  top: 38.9%;
+  right: 25%;
+  &:after {
+    content: '';
+    width: rem(28);
+    height: rem(34);
+    background: url('../img/play.svg') no-repeat center/contain;
+  }
+  @media (max-width: 768px) {
+    width: rem(75);
+    height: rem(75);
+    &:after {
+      width: rem(15);
+      height: rem(19);
+    }
+  }
+  @media (max-width: 540px) {
+    display: none;
+  }
 }

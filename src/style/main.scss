@@ -41,6 +41,12 @@ body {
   &_small {
     max-width: rem(968);
   }
+  @media (max-width: 768px) {
+    padding: rem(0 28);
+  }
+  @media (max-width: 540px) {
+    padding: rem(0 20);
+  }
 }
 
 a {
@@ -56,20 +62,19 @@ img {
 
 h1 {
   font: {
-    size: rem(32);
+    size: rem(30);
     family: $gilroy;
   }
-  margin: rem(0 0 19);
+  margin: rem(0 0 22);
   line-height: 1.37;
 }
 
 h2 {
-  font-size: rem(32);
   font: {
-    size: rem(32);
+    size: rem(30);
     family: $gilroy;
   }
-  margin: rem(0 0 48);
+  margin: rem(0 0 50);
   line-height: 1.37;
   text-align: center;
 }
@@ -106,15 +111,19 @@ button {
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
   html {
-    font-size: 12px;
+    font-size: 17px;
+  }
+  h1 {
+    margin-bottom: rem(25);
+    line-height: 1.375;
   }
 }
 
-@media (max-width: 600px) {
-  html {
-    font-size: 14px;
+@media (max-width: 540px) {
+  h1 {
+    margin-bottom: rem(20);
   }
 }
 
@@ -122,3 +131,6 @@ button {
 @import "components/intro";
 @import "components/features";
 @import "components/info";
+@import "components/form";
+@import "components/form-section";
+@import "components/links";

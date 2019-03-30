@@ -1,0 +1,23 @@
+.links {
+  @include flexbox(center, space-between);
+}
+
+.links__social {
+  @include flexbox(center, flex-start);
+}
+
+.links__link {
+  color: #fff;
+  font-size: rem(20);
+  line-height: 1.2;
+  @include flexbox(center, flex-start);
+  svg {
+    margin-right: rem(13);
+  }
+}
+
+.links__social-link {
+  &:not(:last-child) {
+    margin-right: rem(20);
+  }
+}

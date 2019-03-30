@@ -1,0 +1,45 @@
+.form {
+  max-width: rem(544);
+  margin: 0 auto rem(64);
+  text-align: center;
+}
+
+.form__item {
+  margin-bottom: rem(20);
+  &:nth-last-child(2) {
+    margin-bottom: rem(40);
+  }
+}
+
+.form__input {
+  display: block;
+  width: 100%;
+  border-radius: rem(6);
+  border: none;
+  background: #fff;
+  box-shadow: none;
+  padding: rem(20 24);
+  color: $main-font-color;
+  line-height: 1.2;
+  -webkit-appearance: none;
+  font: {
+    family: $proxima;
+    weight: normal;
+    size: rem(20);
+  }
+  @include input-placeholder {
+    color: $grey;;
+    line-height: 1.2;
+    transition: opacity 250ms;
+    font: {
+      family: $proxima;
+      weight: normal;
+      size: rem(20);
+    }
+  }
+  &:focus {
+    @include input-placeholder {
+      opacity: 0;
+    }
+  }
+}
